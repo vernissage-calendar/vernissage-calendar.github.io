@@ -17,6 +17,20 @@
     color-scheme: dark;
   }
   body { background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.45; }
+  .bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+  .bg svg { width: 100%; height: 100%; display: block; }
+  .bg svg { padding: 24px 12px; }
+  .bg::after { content: ""; position: absolute; inset: 0; background: color-mix(in srgb, var(--bg) 25%, transparent); }
+  .bg-line { stroke: var(--fg); stroke-opacity: .07; stroke-width: 1.5; }
+  .bg-lit { fill: var(--fg); fill-opacity: .045; }
+  .bg-num { fill: var(--fg); fill-opacity: .10; font: 700 34px var(--font); }
+  .bg-num.on { fill-opacity: .28; }
+  .bg-dow { fill: var(--fg); fill-opacity: .16; font: 700 22px var(--font); letter-spacing: 4px; }
+  .bg-month { fill: var(--fg); fill-opacity: .06; font: 800 104px var(--font); letter-spacing: 6px; }
+  .bg-dot { fill: var(--dot); fill-opacity: .55; }
+  .wrap { position: relative; z-index: 1; }
+  .item { background: color-mix(in srgb, var(--bg) 72%, transparent); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+  @media (min-width: 900px) { .bg svg { padding: 40px 48px; } .bg::after { background: linear-gradient(90deg, var(--bg) 35%, color-mix(in srgb, var(--bg) 40%, transparent) 60%, transparent 100%); } .wrap { margin-left: max(48px, 8vw); } }
   .wrap { max-width: 640px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
   header { display: grid; gap: 10px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
   .dot { width: 26px; height: 26px; border-radius: 50%; background: var(--dot); }
@@ -163,5 +177,6 @@
   </section>
   <footer>Times are Toronto time. Check the venue’s site before you go.</footer>
 </div>
+<div class="bg" aria-hidden="true"><svg viewBox="0 0 700 1170" preserveAspectRatio="xMaxYMax meet"><text x="12" y="120" class="bg-month">NOVEMBER</text><text x="12" y="208" class="bg-dow">M</text><text x="112" y="208" class="bg-dow">T</text><text x="212" y="208" class="bg-dow">W</text><text x="312" y="208" class="bg-dow">T</text><text x="412" y="208" class="bg-dow">F</text><text x="512" y="208" class="bg-dow">S</text><text x="612" y="208" class="bg-dow">S</text><text x="612" y="270" class="bg-num">1</text><text x="12" y="420" class="bg-num">2</text><text x="112" y="420" class="bg-num">3</text><text x="212" y="420" class="bg-num">4</text><rect x="300" y="380" width="100" height="150" class="bg-lit"/><text x="312" y="420" class="bg-num on">5</text><circle cx="376" cy="408" r="17" class="bg-dot"/><rect x="400" y="380" width="100" height="150" class="bg-lit"/><text x="412" y="420" class="bg-num on">6</text><circle cx="476" cy="408" r="17" class="bg-dot"/><rect x="500" y="380" width="100" height="150" class="bg-lit"/><text x="512" y="420" class="bg-num on">7</text><circle cx="576" cy="408" r="14" class="bg-dot"/><rect x="600" y="380" width="100" height="150" class="bg-lit"/><text x="612" y="420" class="bg-num on">8</text><circle cx="676" cy="408" r="11" class="bg-dot"/><text x="12" y="570" class="bg-num">9</text><text x="112" y="570" class="bg-num">10</text><text x="212" y="570" class="bg-num">11</text><text x="312" y="570" class="bg-num">12</text><text x="412" y="570" class="bg-num">13</text><text x="512" y="570" class="bg-num">14</text><text x="612" y="570" class="bg-num">15</text><text x="12" y="720" class="bg-num">16</text><text x="112" y="720" class="bg-num">17</text><text x="212" y="720" class="bg-num">18</text><text x="312" y="720" class="bg-num">19</text><text x="412" y="720" class="bg-num">20</text><text x="512" y="720" class="bg-num">21</text><text x="612" y="720" class="bg-num">22</text><text x="12" y="870" class="bg-num">23</text><text x="112" y="870" class="bg-num">24</text><text x="212" y="870" class="bg-num">25</text><text x="312" y="870" class="bg-num">26</text><text x="412" y="870" class="bg-num">27</text><text x="512" y="870" class="bg-num">28</text><text x="612" y="870" class="bg-num">29</text><text x="12" y="1020" class="bg-num">30</text><line x1="0" x2="700" y1="230" y2="230" class="bg-line"/><line x1="0" x2="700" y1="380" y2="380" class="bg-line"/><line x1="0" x2="700" y1="530" y2="530" class="bg-line"/><line x1="0" x2="700" y1="680" y2="680" class="bg-line"/><line x1="0" x2="700" y1="830" y2="830" class="bg-line"/><line x1="0" x2="700" y1="980" y2="980" class="bg-line"/><line x1="0" x2="700" y1="1130" y2="1130" class="bg-line"/><line x1="0" x2="0" y1="230" y2="1130" class="bg-line"/><line x1="100" x2="100" y1="230" y2="1130" class="bg-line"/><line x1="200" x2="200" y1="230" y2="1130" class="bg-line"/><line x1="300" x2="300" y1="230" y2="1130" class="bg-line"/><line x1="400" x2="400" y1="230" y2="1130" class="bg-line"/><line x1="500" x2="500" y1="230" y2="1130" class="bg-line"/><line x1="600" x2="600" y1="230" y2="1130" class="bg-line"/><line x1="700" x2="700" y1="230" y2="1130" class="bg-line"/></svg></div>
 </body>
 </html>

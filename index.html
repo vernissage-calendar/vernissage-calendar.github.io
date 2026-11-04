@@ -44,6 +44,9 @@
   h2 { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--dot); }
   .item { display: grid; gap: 4px; padding-block: 18px; border-bottom: 1px solid var(--line); min-width: 0; }
   .when { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .tier { display: inline-block; margin-right: 10px; padding: 2px 8px; border-radius: 999px; font-size: 11px; letter-spacing: .14em; vertical-align: 1px; }
+  .tier-spotlight { background: var(--fg); color: var(--bg); }
+  .tier-discover { border: 1px solid var(--dot); color: var(--dot); }
   .extra { color: var(--muted); font-weight: 500; letter-spacing: .06em; text-transform: none; }
   h3 { margin: 4px 0 0; font-size: 24px; font-weight: 700; line-height: 1.15; text-wrap: balance; }
   .title { margin: 0; font-size: 17px; }
@@ -69,7 +72,7 @@
   <section aria-label="Thursday">
     <h2>Thursday · Nov 5</h2>
       <article class="item">
-        <p class="when"><span class="kind">Opening</span> · 5:30–7:30 pm<span class="extra"> · artist in attendance</span></p>
+        <p class="when"><span class="tier tier-spotlight">Spotlight</span><span class="kind">Opening</span> · 5:30–7:30 pm<span class="extra"> · artist in attendance</span></p>
         <h3>Nicole Katsuras</h3>
         <p class="title">The Unknowable Landscape</p>
         <p class="venue">Bau-Xi Gallery | Dufferin</p>
@@ -80,7 +83,7 @@
         </div>
       </article>
       <article class="item">
-        <p class="when"><span class="kind">Opening</span> · 5:30–7:30 pm<span class="extra"> · artist in attendance</span></p>
+        <p class="when"><span class="tier tier-spotlight">Spotlight</span><span class="kind">Opening</span> · 5:30–7:30 pm<span class="extra"> · artist in attendance</span></p>
         <h3>Kyle Scheurmann</h3>
         <p class="title">All That We Can Take</p>
         <p class="venue">Bau-Xi Gallery | Dufferin</p>
@@ -91,7 +94,7 @@
         </div>
       </article>
       <article class="item">
-        <p class="when"><span class="kind">Opening</span> · 6–9 pm<span class="extra"> · artist tour Sat, Nov 7 · 2–5 pm</span></p>
+        <p class="when"><span class="tier tier-discover">Discover</span><span class="kind">Opening</span> · 6–9 pm<span class="extra"> · artist tour Sat, Nov 7 · 2–5 pm</span></p>
         <h3>Kal Mansur</h3>
         <p class="title">group of one</p>
         <p class="venue">Lustre Contemporary</p>
@@ -105,7 +108,7 @@
   <section aria-label="Friday">
     <h2>Friday · Nov 6</h2>
       <article class="item">
-        <p class="when"><span class="kind">Talk</span> · 11 am–12 pm<span class="extra"> · free, registration required</span></p>
+        <p class="when"><span class="tier tier-spotlight">Spotlight</span><span class="kind">Talk</span> · 11 am–12 pm<span class="extra"> · free, registration required</span></p>
         <h3>Muriel Ahmarani Jaouich with Emily McKibbon</h3>
         <p class="title">Collection in Conversation</p>
         <p class="venue">Doris McCarthy Gallery</p>
@@ -116,7 +119,7 @@
         </div>
       </article>
       <article class="item">
-        <p class="when"><span class="kind">Opening</span> · 6–8 pm</p>
+        <p class="when"><span class="tier tier-discover">Discover</span><span class="kind">Opening</span> · 6–8 pm</p>
         <h3>Terrain #3</h3>
         <p class="title">Hugh Alcock, Stephanie Brody-Lederman, Klay-James Enos, Karen Klee-Atlin, Norah Maki, Leah Oates, Frances Patella, Kamelia Pezeshki, Emily Pike, Pierre St-Jacques</p>
         <p class="venue">Remote Gallery B</p>
@@ -127,7 +130,7 @@
         </div>
       </article>
       <article class="item">
-        <p class="when"><span class="kind">Opening</span></p>
+        <p class="when"><span class="tier tier-spotlight">Spotlight</span><span class="kind">Opening</span></p>
         <h3>Once, Again</h3>
         <p class="title">Nabil Azab, Jennifer Carvalho, Alice Gong Xiaowen, Lotus L. Kang, Karice Mitchell, Michael Thompson</p>
         <p class="venue">Franz Kaka</p>
@@ -141,7 +144,7 @@
   <section aria-label="Saturday">
     <h2>Saturday · Nov 7</h2>
       <article class="item">
-        <p class="when"><span class="kind">Talk</span> · 2–3:30 pm<span class="extra"> · free, registration required</span></p>
+        <p class="when"><span class="tier tier-spotlight">Spotlight</span><span class="kind">Talk</span> · 2–3:30 pm<span class="extra"> · free, registration required</span></p>
         <h3>Muriel Ahmarani Jaouich and Amanda Boulos</h3>
         <p class="title">Matrilineal Memory</p>
         <p class="venue">Doris McCarthy Gallery</p>
@@ -152,7 +155,7 @@
         </div>
       </article>
       <article class="item">
-        <p class="when"><span class="kind">Opening</span> · 2–5 pm<span class="extra"> · curated by Sarah Quinton</span></p>
+        <p class="when"><span class="tier tier-discover">Discover</span><span class="kind">Opening</span> · 2–5 pm<span class="extra"> · curated by Sarah Quinton</span></p>
         <h3>Tazeen Qayyum</h3>
         <p class="title">How to Trace a Pattern</p>
         <p class="venue">The Red Head Gallery</p>
@@ -163,7 +166,7 @@
         </div>
       </article>
       <article class="item">
-        <p class="when"><span class="kind">Opening</span><span class="extra"> · reception Thu, Nov 12 · 6–8 pm</span></p>
+        <p class="when"><span class="tier tier-discover">Discover</span><span class="kind">Opening</span><span class="extra"> · reception Thu, Nov 12 · 6–8 pm</span></p>
         <h3>Group exhibition</h3>
         <p class="title">Sixth Annual Juried Show of Visual Arts</p>
         <p class="venue">Art Gallery of Mississauga</p>
@@ -177,7 +180,7 @@
   <section aria-label="Sunday">
     <h2>Sunday · Nov 8</h2>
       <article class="item">
-        <p class="when"><span class="kind">Talk</span> · 2–3 pm</p>
+        <p class="when"><span class="tier tier-discover">Discover</span><span class="kind">Talk</span> · 2–3 pm</p>
         <h3>Jelena Duma, Ruth Martin Maude</h3>
         <p class="title">Desert Frequencies &amp; Meandering · Artist Talk</p>
         <p class="venue">Propeller Art Gallery</p>
